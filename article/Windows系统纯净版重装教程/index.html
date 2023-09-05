@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content>
+    <meta name="keyword" content>
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          Windows系统纯净版重装教程 - 不要加洋葱 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://wmhl2001.github.io/article/Windows系统纯净版重装教程/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/article_header/article_bg.jpg')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#系统" title="系统">系统</a>
+                            
+                              <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                            
+                              <a class="tag" href="/tags/#Windows" title="Windows">Windows</a>
+                            
+                        </div>
+                        <h1>Windows系统纯净版重装教程</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by 不要加洋葱 on
+                            2023-09-05
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">不要加洋葱</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">主页</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">关于</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">标签</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">归档</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h3 id="一-前言可跳过">一、前言——可跳过</h3>
+<p>一个风轻云淡的下午，一个懵懂且囊中羞涩的青年打算给他老旧的电脑翻新一下（系统重置），漫长的等待是无法正常进入桌面的结果，闪烁的屏幕刺激着这位愤怒的青年带着笔记本前往了网吧，以下便是我网吧一下午的经验总结，技多不压身嘛，希望对大家有所帮助。</p>
+<h3 id="二-适用说明免责声明">二、适用说明——“免责声明”</h3>
+<ul>
+<li>有通过其他方式，如尝试过进入WinRE环境修复无果后不得已只能重装的情况下</li>
+<li>电脑崩溃且无法正常进入系统等严重问题，只求尽快恢复电脑正常使用且不太在意数据的丢失</li>
+<li>重装有风险，操作前已备份好了重要文件，本教程也适用于新电脑安装系统（按理说会这些的也不屑于看我这个）</li>
+</ul>
+<h3 id="三-系统说明你需要知道的">三、系统说明——你需要知道的</h3>
+<p>演示系统均为Win10官方纯净版，不携带任何第三方软件。即非电脑品牌方的出厂预装系统，如杜比音效，一键切换模式之类的定制化功能可能会缺失，可后期自行前往电脑品牌方官网下载安装。</p>
+<h3 id="四-准备须知节省不必要的麻烦">四、准备须知——节省不必要的麻烦</h3>
+<ul>
+<li>一个8GB以上的空U盘</li>
+<li>一台网速好点的电脑</li>
+<li>重装电脑的U盘启动快捷键</li>
+<li>大概明确系统硬盘的容量</li>
+<li>明确电脑预装的Windows版本</li>
+</ul>
+<h3 id="五-启动盘制作有点繁杂">五、启动盘制作——有点繁杂</h3>
+<p>插入u盘，进入微软官网，点击<a href="https://www.microsoft.com/zh-cn/software-download/windows10/" target="_blank" rel="noopener">立即下载工具</a>完成并打开（可能会很慢）。</p>
+<p><img src="/img/Content_images/09052.png" alt="演示图片"></p>
+<ul>
+<li>使用的声明和许可条款——<strong><font color="#F4711F">接受</font></strong></li>
+<li>为另一台电脑创建安装介质——<strong><font color="#F4711F">下一步</font></strong></li>
+<li>对这台电脑使用推荐的选项（没有这项就不管）——<strong><font color="#F4711F">取消勾选</font></strong></li>
+<li>选择语言、体系结构和版本（纠结的话就默认）——<strong><font color="#F4711F">选择与重装电脑匹配</font></strong></li>
+<li>选择要使用的介质（我们这里挨个尝试）——<strong><font color="#F4711F">①U盘/②ISO文件</font></strong></li>
+</ul>
+<p><img src="/img/Content_images/09053.gif" alt="演示图片"></p>
+<p><strong><font color="#F4711F">①选择U盘为介质</font></strong><br>
+先确保电脑C盘有8GB以上的剩余空间，选择插入的<strong>U盘</strong>（可移动驱动器），<strong>下一步</strong>。耐心等待系统下载完成，拔出U盘。启动U盘做好，然后请跳过步骤②③④到“<strong>六、系统安装</strong>”。（如果和我当时一样，界面长时间卡在“<strong>正在下载Windows 10</strong>”且进度一直为0%的话请试试步骤②，理论上如果步骤①不行，步骤②也是不行的）</p>
+<p><img src="/img/Content_images/09054.gif" alt="演示图片"></p>
+<p><strong><font color="#F4711F">②选择ISO镜像文件为介质</font></strong><br>
+选择<strong>ISO文件</strong>并下载到非U盘的保存地址，等待下载完成后关闭页面，然后再请跳到步骤④将其写入到U盘里，完成后拔出U盘，启动U盘做好。再跳到“<strong>六、系统安装</strong>”。（如遇步骤①一样的问题，请试试步骤③）</p>
+<p><img src="/img/Content_images/09055.gif" alt="演示图片"></p>
+<p><strong><font color="#F4711F">③镜像文件下载地址</font></strong><br>
+如果你不得已来到这一步，那么请不要灰心，因为我当时和你的处境一样，这是一个非官方的纯净版下载地址。</p>
+<p>下载网址：<a href="https://next.itellyou.cn" target="_blank" rel="noopener">https://next.itellyou.cn</a></p>
+<p>可直接登录，选择Windows10，下滑选择合适的版本并复制链接使用专业下载工具下载如迅雷，再通过步骤④将其写入U盘。</p>
+<p><img src="/img/Content_images/09056.gif" alt="演示图片"><br>
+无特殊要求的话一般就选Consumer editions</p>
+<ul>
+<li>Consumer editions包括：家庭版、教育版、专业版</li>
+<li>Business editions包括：企业版、教育版、专业版</li>
+</ul>
+<p><strong><font color="#F4711F">④镜像文件写入</font></strong><br>
+如果你的电脑支持UEFI启动，则可以直接通过解压软件将ISO镜像文件解压到U盘里，完成启动盘制作。无需经过以下方法（否则，这里我们统一使用UltraISO光盘映像制作工具将下载好的镜像文件写入U盘——增加引导）</p>
+<p>下载网址：<a href="https://www.ultraiso.com/" target="_blank" rel="noopener">https://www.ultraiso.com/</a></p>
+<ul>
+<li>以**<font color="#F4711F">管理员身份运行打开</font>**</li>
+<li><strong><font color="#F4711F">选择继续试用</font></strong></li>
+<li>选择**<font color="#F4711F">文件</font><strong>——</strong><font color="#F4711F">打开</font><strong>——选择下好的镜像文件</strong><font color="#F4711F">打开</font>**</li>
+<li>选择**<font color="#F4711F">启动</font><strong>——</strong><font color="#F4711F">写入硬盘映像</font>**</li>
+<li>确定**<font color="#F4711F">硬盘驱动器</font><strong>（是否是自己的U盘）——</strong><font color="#F4711F">写入</font><strong>——提示选择是——写入成功</strong><font color="#F4711F">关闭窗口</font>**</li>
+</ul>
+<p><img src="/img/Content_images/09057.gif" alt="演示图片"></p>
+<h3 id="六-系统安装看运气的时候来了">六、系统安装——看运气的时候来了</h3>
+<p>这后面的就没有我的实机演示图片了哈，我就一台电脑，再重装的话我实在懒得恢复。</p>
+<ul>
+<li>电脑关机状态，插入制作好的启动U盘，长按U盘启动项快捷键（小米笔记本：<strong><font color="#F4711F">电源键</font></strong>+<strong><font color="#F4711F">F12</font></strong>）</li>
+<li>在启动引导界面通过键盘方向键选择U盘设备(USB Device)进行引导（一般会显示U盘品牌名称），然后 <strong><font color="#F4711F">Enter回车</font></strong>（等待）</li>
+<li>基本上是默认选项——<strong><font color="#F4711F">下一步</font></strong></li>
+<li>点击——<strong><font color="#F4711F">现在安装</font></strong></li>
+<li>点击——<strong><font color="#F4711F">我没有产品密钥</font></strong></li>
+<li>版本选择——建议选择重装前的版本，大多默认**<font color="#F4711F">家庭版</font>**，也可根据密钥版本选择</li>
+<li>勾选——<strong><font color="#F4711F">接受条款，下一步</font></strong></li>
+<li>安装类型选择——<strong><font color="#F4711F">自定义：仅安装Windows（高级）</font></strong></li>
+<li>选择安装系统的分区——<strong><font color="#F4711F">下一步</font></strong>（为系统指定或新建一个分区用来安装系统：①只格式化系统盘并继续安装在该盘，重装后则会保留其他盘的数据；②或者直接无脑删除所有的分区进行重装，清清爽爽）</li>
+<li>休息一会，坐等安装。系统提示点击**<font color="#F4711F">立即重启</font>**后黑屏拔出U盘</li>
+<li>耐心等待，后面跟着系统提示走流程完事儿<br>
+技能+1…</li>
+</ul>
+<blockquote>
+<h3 id="疑问解答">疑问解答</h3>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>重装后自动激活</strong><br>
+在电脑硬件不变的情况下再次重装预装版本系统联网后会自动检测并激活</li>
+</ul>
+</blockquote>
+<ul>
+<li><strong>指纹不能使用</strong><br>
+部分驱动在系统重装联网后未自动下载，需自行前往笔记本品牌方服务页面按需下载驱动整合包进行驱动安装</li>
+<li><strong>系统盘判定方法</strong><br>
+分区空间大小、系统盘卷标</li>
+<li><strong>分区特别说明</strong><br>
+一块物理硬盘相当于一个柜子，可以只有一个大抽屉（C盘），也可以有很多个抽屉（C、D、E、F盘），也就是将其分成很多个独立的硬盘工作。计算机发展到今天，无论你有几块物理硬盘，建议都最好是将系统单独划分一个区出来，给系统盘的空间至少保证256GB=262144MB，日常个人文件保存在其他区，这样即便是系统崩溃你其他区的数据大概率也不会丢失</li>
+<li><strong>笔记本外接显示器刷新率问题</strong><br>
+大多数笔记本图像输出都是通过集成显卡，如果你的笔记本集显以前外接显示器支持高刷，而重装后显示设置不支持高刷了，那么请尝试卸载集显驱动，重启电脑后会自动重新安装，或者前往官网下载驱动</li>
+</ul>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/article/Welcome-to-visit！/" data-toggle="tooltip" data-placement="top" title="Welcome to visit！">下篇文章 &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    <style>
+      span.toc-nav-number{
+        display: none
+      }
+    </style>
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一-前言可跳过"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">一、前言——可跳过</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二-适用说明免责声明"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">二、适用说明——“免责声明”</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三-系统说明你需要知道的"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">三、系统说明——你需要知道的</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#四-准备须知节省不必要的麻烦"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">四、准备须知——节省不必要的麻烦</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#五-启动盘制作有点繁杂"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">五、启动盘制作——有点繁杂</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#六-系统安装看运气的时候来了"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">六、系统安装——看运气的时候来了</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#疑问解答"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">疑问解答</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">特色标签</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#系统" title="系统">系统</a>
+                        
+                          <a class="tag" href="/tags/#教程" title="教程">教程</a>
+                        
+                          <a class="tag" href="/tags/#Windows" title="Windows">Windows</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>友链</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="网址" target="_blank">待建1</a></li>
+                    
+                        <li><a href="网址" target="_blank">待建2</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+<!-- chrome Firefox 中文锚点定位失效-->
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<!-- smooth scroll behavior polyfill  -->
+<script type="text/javascript" src="/js/smoothscroll.js"></script>
+<script>
+        $('#toc').on('click','a',function(a){
+            // var isChrome = window.navigator.userAgent.indexOf("Chrome") !== -1;
+            // console.log(window.navigator.userAgent,isChrome)
+                // if(isChrome) {
+                    // console.log(a.currentTarget.outerHTML);
+                    // console.log($(a.currentTarget).attr("href"));
+                    //跳转到指定锚点
+                    // document.getElementById(a.target.innerText.toLowerCase()).scrollIntoView(true);
+                    document.getElementById($(a.currentTarget).attr("href").replace("#","")).scrollIntoView({behavior: 'smooth' });
+                // }
+        })  
+</script>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/wmhl2001">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 不要加洋葱 2023 
+                    <br>
+                    Theme by <a href="http://beantech.org">BeanTech</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://www.huweihuang.com">胡伟煌</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://wmhl2001.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'xxx';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://wmhl2001.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+</html>
