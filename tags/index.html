@@ -134,6 +134,13 @@
 
                         
                         <li>
+                            <a href="/archive/">归档</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
                             <a href="/about/">关于</a>
                         </li>
                         
@@ -142,13 +149,6 @@
                         
                         <li>
                             <a href="/tags/">标签</a>
-                        </li>
-                        
-                    
-
-                        
-                        <li>
-                            <a href="/archive/">归档</a>
                         </li>
                         
                     
@@ -198,20 +198,44 @@
             <!-- 标签云 -->
             <div id='tag_cloud' class="tags">
                 
-                    <a href="#系统" title="系统" rel="1">系统</a>
+                    <a href="#随笔" title="随笔" rel="1">随笔</a>
                 
-                    <a href="#系统 ceshi" title="系统 ceshi" rel="0">系统 ceshi</a>
+                    <a href="#系统" title="系统" rel="1">系统</a>
                 
                     <a href="#教程" title="教程" rel="1">教程</a>
                 
                     <a href="#Windows" title="Windows" rel="1">Windows</a>
                 
-                    <a href="#随笔" title="随笔" rel="1">随笔</a>
-                
             </div>
 
             <!-- 标签列表 -->
 
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="随笔">
+                    <span class="tag-text">随笔</span>
+                </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/article/Welcome-to-visit！/">
+                        <h2 class="post-title">
+                            Welcome to visit！
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                初次搭建，测试文章
+                            </h3>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
+                
+            </div>
             
             <div class="one-tag-list">
                 <span class="fa fa-tag listing-seperator" id="系统">
@@ -232,13 +256,6 @@
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
                 </div>
                 <hr>
-                
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="系统 ceshi">
-                    <span class="tag-text">系统 ceshi</span>
-                </span>
                 
             </div>
             
@@ -278,32 +295,6 @@
                         <h2 class="post-title">
                             Windows系统纯净版重装教程
                         </h2>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
-                
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="随笔">
-                    <span class="tag-text">随笔</span>
-                </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/article/Welcome-to-visit！/">
-                        <h2 class="post-title">
-                            Welcome to visit！
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                初次搭建，测试文章
-                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
